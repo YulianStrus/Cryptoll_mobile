@@ -104,20 +104,19 @@ const swiper = new Swiper(".mySwiper", {
 document.addEventListener("DOMContentLoaded", function () {
   const moduleHeaders = document.querySelectorAll(".module-header");
   const nestedHeaders = document.querySelectorAll(".nested-header");
+
   moduleHeaders.forEach((header) => {
     header.addEventListener("click", function () {
       this.classList.toggle("active");
       const content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
+      content.style.display = content.style.display === "block" ? "none" : "block";
     });
   });
+
   nestedHeaders.forEach((header) => {
     const content = header.nextElementSibling;
     const arrow = header.querySelector(".vector");
+
     let closeButton = content.querySelector(".close-button");
     if (!closeButton) {
       closeButton = document.createElement("button");
@@ -133,9 +132,16 @@ document.addEventListener("DOMContentLoaded", function () {
         arrow.style.transform = "rotate(0deg)";
       });
     }
+
     header.addEventListener("click", function () {
-      const content = this.nextElementSibling;
-      const arrow = this.querySelector(".vector");
+      nestedHeaders.forEach((otherHeader) => {
+        if (otherHeader !== header) {
+          const otherContent = otherHeader.nextElementSibling;
+          const otherArrow = otherHeader.querySelector(".vector");
+          otherContent.style.display = "none";
+          otherArrow.style.transform = "rotate(0deg)";
+        }
+      });
 
       if (content.style.display === "block") {
         content.style.display = "none";
@@ -147,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const accordionData = [
@@ -240,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
     imageFrame.appendChild(imageWrapper);
     headerAndImage.appendChild(imageFrame);
 
-    // Додаємо заголовок та стрілку
     const title = document.createElement("span");
     title.textContent = data.title;
     const arrow = document.createElement("span");
@@ -255,7 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
     accordionHeader.appendChild(title);
     accordionHeader.appendChild(arrow);
 
-    // Створення контенту акордеону
     const accordionContent = document.createElement("div");
     accordionContent.classList.add("accordion-content");
     accordionContent.innerHTML = `
@@ -265,12 +270,10 @@ document.addEventListener("DOMContentLoaded", function () {
       <footer>${data.footer}</footer>
     `;
 
-    // Додаємо заголовок і контент до акордеону
     accordionItem.appendChild(accordionHeader);
     accordionItem.appendChild(accordionContent);
     accordionContainer.appendChild(accordionItem);
 
-    // Додавання функції для відкриття і закриття
     accordionHeader.addEventListener("click", function () {
       const isActive = accordionItem.classList.contains("active");
 
