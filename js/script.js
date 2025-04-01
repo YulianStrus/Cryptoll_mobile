@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accordionData = [
     {
       title: "Lorem ipsum dolor sit amet",
-      imageUrl: "../cryptolly_mobile/img/png/image1.png",
+      imageUrl: "./img/png/image1.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor",
-      imageUrl: "../cryptolly_mobile/img/png/image2.png",
+      imageUrl: "./img/png/image2.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor sit amet",
-      imageUrl: "../cryptolly_mobile/img/png/image5.png",
+      imageUrl: "./img/png/image5.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor",
-      imageUrl: "../cryptolly_mobile/img/png/image3.png",
+      imageUrl: "./img/png/image3.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum ",
-      imageUrl: "../cryptolly_mobile/img/png/image6.png",
+      imageUrl: "./img/png/image6.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor sit",
-      imageUrl: "../cryptolly_mobile/img/png/image4.png",
+      imageUrl: "./img/png/image4.png",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
