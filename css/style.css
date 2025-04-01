@@ -771,6 +771,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 0;
+    direction: rtl;
   }
   .main .main__section--services .main__section__container .right-column .card {
     background: linear-gradient(135deg, #4c1d95, #111);
@@ -784,6 +785,19 @@ body {
   .main .main__section--services .main__section__container .right-column .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  }
+  .main .main__section--services .main__section__container .right-column > * {
+    direction: ltr;
+  }
+  .main .main__section--services .main__section__container .right-column::-webkit-scrollbar {
+    width: 8px;
+  }
+  .main .main__section--services .main__section__container .right-column::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .main .main__section--services .main__section__container .right-column::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #8a2be2, #ff00ff);
+    border-radius: 4px;
   }
   .main .star {
     position: absolute;
