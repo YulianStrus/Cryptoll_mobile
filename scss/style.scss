@@ -1509,7 +1509,7 @@ body {
             .title {
                 font-size: 24px;
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
 
             .description {
@@ -1517,12 +1517,13 @@ body {
                 font-size: 16px;
                 line-height: 140%;
                 opacity: 0.8;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
             }
 
             .buttons {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 40px;
             }
 
             .btn {
@@ -1538,9 +1539,7 @@ body {
                 font-weight: 600;
                 font-size: 12px;
                 line-height: 140%;
-                background: radial-gradient(52.94% 407.78% at -6.99% 180.88%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%)
-                    , radial-gradient(92.28% 334.94% at 111.03% 0%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%)
-                    , linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+                background: radial-gradient(52.94% 407.78% at -6.99% 180.88%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%), radial-gradient(92.28% 334.94% at 111.03% 0%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%), linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
                 border-radius: 28px;
                 color: white;
                 cursor: pointer;
@@ -1552,4 +1551,119 @@ body {
             }
         }
     }
+
+    .footer {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+        overflow: hidden ;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 463px;
+            height: 375px;
+            left: -200px;
+            top: 309px;
+            transform: rotate(-90deg);
+            background: linear-gradient(180deg, #2C4982 0%, #2CD095 100%);
+            filter: blur(200px);
+            z-index: -1;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            width: 372.95px;
+            height: 237.09px;
+            left: -250px;
+            top: 446.95px;
+            transform: rotate(-90deg);
+            background: linear-gradient(180deg, rgba(24, 255, 158, 0) 0%, #17FFE3 100%);
+            filter: blur(100px);
+            z-index: -1;
+        }
+
+        .footer-content {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .footer-logo {
+            height: 36px;
+            margin-bottom: 10px;
+        }
+
+        .footer-description {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .footer-form {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            .footer-input {
+                width: 100%;
+                padding: 16px 20px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+            }
+
+            .footer-button {
+                height: 100%;
+                right: 20px;
+                position: absolute;
+                border: none;
+                color: #495057;
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+
+        .telegram-button {
+            background: radial-gradient(162.58% 589.06% at -28.26% 75.86%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%)
+                , radial-gradient(95.58% 184.55% at -5.37% -16.9%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%)
+                , linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+            border-radius: 28px;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            a {
+                color: #F1F3F5;
+                text-decoration: none;
+                font-size: 14px;
+                margin: 12px 0;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        .footer-policy,
+        .footer-copyright {
+            font-size: 14px;
+            line-height: 140%;
+            font-weight: 600;
+            color: #F1F3F5;
+            margin: 23px 0;
+        }
+    }
+
 }
