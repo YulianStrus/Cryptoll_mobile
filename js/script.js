@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const accordionItem = document.createElement("div");
     accordionItem.classList.add("accordion-item");
 
-    // Створення заголовку і зображення
+
     const accordionHeader = document.createElement("div");
     accordionHeader.classList.add("accordion-header");
 
@@ -316,13 +316,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const contentData = [
   {
-      image: "../cryptolly_mobile/img/png/company.png",
+      image: "./img/png/company.png",
       subtitle: "About Us",
       title: "Company standart",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
     },
   {
-    image: "../cryptolly_mobile/img/png/goals.png",
+    image: "./img/png/goals.png",
       subtitle: "About Us",
       title: "Company Goals",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"

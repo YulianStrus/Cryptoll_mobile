@@ -229,6 +229,7 @@ body {
             padding: 90px 50px;
             align-items: flex-start;
             justify-content: flex-start;
+            z-index: 49;
 
             ul {
                 display: flex;
@@ -428,7 +429,7 @@ body {
             color: constants.$gray-0;
             top: 42px;
             right: 20px;
-            z-index: 1;
+            z-index: 50;
         }
 
         &__logo {
@@ -611,21 +612,22 @@ body {
                 .right-column {
                     flex: 1;
                     max-width: 400px;
-                    max-height: 320px; // Додаємо обмеження висоти
-                    overflow: hidden; // Запобігає виходу контенту за межі
+                    max-height: 330px;
+                    overflow: hidden;
                 
                     .cards-wrapper {
                         flex: 1;
                         max-width: 100%;
-                        max-height: 320px; // Встановлюємо висоту для скролінгу
-                        overflow-y: auto; // Використовуємо auto замість scroll для кращої адаптації
+                        max-height: 330px;
+                        overflow-y: auto;
                         -webkit-overflow-scrolling: touch;
                         display: flex;
                         flex-direction: column;
                         min-height: 0;
-                        direction: ltr; // Виправляємо потенційну проблему зі скролом
+                        direction: ltr;
                 
                         .card {
+                            margin-bottom: 20px;
                             background:
                                 radial-gradient(65.97% 92.77% at -13.3% -20.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%),
                                 radial-gradient(144.76% 629.53% at -6.71% 100%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%),
