@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const accordionData = [
     {
       title: "Lorem ipsum dolor sit amet",
-      imageUrl: "./img/png/image1.png",
+      imageUrl: "./img/image1.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor",
-      imageUrl: "./img/png/image2.png",
+      imageUrl: "./img/image2.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor sit amet",
-      imageUrl: "./img/png/image5.png",
+      imageUrl: "./img/image5.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor",
-      imageUrl: "./img/png/image3.png",
+      imageUrl: "./img/image3.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum ",
-      imageUrl: "./img/png/image6.png",
+      imageUrl: "./img/image6.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title: "Lorem ipsum dolor sit",
-      imageUrl: "./img/png/image4.png",
+      imageUrl: "./img/image4.webp",
       header: "Lorem ipsum dolor sit amet",
       content1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.",
@@ -319,13 +319,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const contentData = [
   {
-      image: "./img/png/company.png",
+      image: "./img/company.webp",
       subtitle: "About Us",
       title: "Company standart",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
     },
   {
-    image: "./img/png/goals.png",
+    image: "./img/goals.webp",
       subtitle: "About Us",
       title: "Company Goals",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
