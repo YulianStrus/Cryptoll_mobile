@@ -313,3 +313,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const contentData = [
+  {
+      image: "../cryptolly_mobile/img/png/company.png",
+      subtitle: "About Us",
+      title: "Company standart",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
+    },
+  {
+    image: "../cryptolly_mobile/img/png/goals.png",
+      subtitle: "About Us",
+      title: "Company Goals",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
+  }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector(".AboutUs");
+  const image = section.querySelector(".card-image");
+  const subtitle = section.querySelector(".subtitle");
+  const title = section.querySelector(".title");
+  const description = section.querySelector(".description");
+  const buttons = section.querySelectorAll(".btn");
+
+  buttons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+          image.src = contentData[index].image;
+          subtitle.textContent = contentData[index].subtitle;
+          title.textContent = contentData[index].title;
+          description.textContent = contentData[index].description;
+      });
+  });
+});

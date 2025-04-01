@@ -1365,6 +1365,66 @@ body {
     transform: scale(1.5);
     background: linear-gradient(143.13deg, #933FFD 21.43%, #19C5FE 110.71%);
   }
+  .main .AboutUs {
+    margin: 60px 20px;
+    padding: 20px;
+    text-align: start;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: radial-gradient(53.39% 67.78% at 100% 106.39%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%), radial-gradient(62.64% 89.41% at -5.37% -16.9%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%), linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+    color: #FFFFFF;
+  }
+  .main .AboutUs .card-image {
+    width: 100%;
+    border-radius: 15px;
+    min-height: 300px;
+    object-fit: contain;
+  }
+  .main .AboutUs .subtitle {
+    color: #BB86FC;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .main .AboutUs .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .main .AboutUs .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  .main .AboutUs .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .AboutUs .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    margin: 0 7px;
+    width: 148px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    background: radial-gradient(52.94% 407.78% at -6.99% 180.88%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%), radial-gradient(92.28% 334.94% at 111.03% 0%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%), linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+    border-radius: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .main .AboutUs .btn:hover {
+    background: linear-gradient(45deg, #8A2BE2, #6A5ACD);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
