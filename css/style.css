@@ -169,6 +169,7 @@ body {
 }
 
 .header {
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
@@ -397,6 +398,7 @@ body {
     height: 100vh;
     padding: 30px 15px;
     flex-direction: column;
+    overflow: hidden;
   }
   .header__nav {
     position: fixed;
@@ -608,7 +610,7 @@ body {
     right: 20px;
     z-index: 1;
   }
-  .header img {
+  .header__logo {
     position: absolute;
     display: block;
     height: 36px;
@@ -617,6 +619,31 @@ body {
   }
   .header__btn {
     display: none;
+  }
+  .header__coin1 {
+    position: absolute;
+    width: 211.34px;
+    height: 227.82px;
+    left: -70px;
+    top: -38.54px;
+    filter: blur(1.5px);
+    transform: rotate(-35.44deg);
+  }
+  .header__coin2 {
+    position: absolute;
+    width: 177.23px;
+    height: 185.02px;
+    left: 263.51px;
+    top: 637px;
+    transform: rotate(30deg);
+  }
+  .header__eter {
+    position: absolute;
+    width: 52.19px;
+    height: 51.6px;
+    left: 333px;
+    top: 73.1px;
+    transform: rotate(-30deg);
   }
   .header::before {
     content: "";

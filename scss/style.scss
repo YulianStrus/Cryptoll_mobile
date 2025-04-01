@@ -12,6 +12,7 @@ body {
 }
 
 .header {
+    position: relative;
 
     .menu-toggle {
         display: none;
@@ -301,6 +302,7 @@ body {
         height: 100vh;
         padding: 30px 15px;
         flex-direction: column;
+        overflow: hidden;
 
         &__nav {
             position: fixed;
@@ -541,7 +543,7 @@ body {
             z-index: 1;
         }
 
-        img {
+        &__logo {
             position: absolute;
             display: block;
             height: 36px;
@@ -551,6 +553,34 @@ body {
 
         &__btn {
             display: none;
+        }
+
+        &__coin1 {
+            position: absolute;
+            width: 211.34px;
+            height: 227.82px;
+            left: -70px;
+            top: -38.54px;
+            filter: blur(1.5px);
+            transform: rotate(-35.44deg);
+        }
+
+        &__coin2 {
+            position: absolute;
+            width: 177.23px;
+            height: 185.02px;
+            left: 263.51px;
+            top: 637px;
+            transform: rotate(30deg);
+        }
+
+        &__eter {
+            position: absolute;
+            width: 52.19px;
+            height: 51.6px;
+            left: 333px;
+            top: 73.1px;
+            transform: rotate(-30deg);
         }
 
         &::before {
@@ -1558,7 +1588,7 @@ body {
         text-align: center;
         padding: 40px 20px;
         font-family: Arial, sans-serif;
-        overflow: hidden ;
+        overflow: hidden;
 
         &::before {
             content: "";
@@ -1572,7 +1602,7 @@ body {
             filter: blur(200px);
             z-index: -1;
         }
-    
+
         &::after {
             content: "";
             position: absolute;
@@ -1627,9 +1657,7 @@ body {
         }
 
         .telegram-button {
-            background: radial-gradient(162.58% 589.06% at -28.26% 75.86%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%)
-                , radial-gradient(95.58% 184.55% at -5.37% -16.9%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%)
-                , linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+            background: radial-gradient(162.58% 589.06% at -28.26% 75.86%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%), radial-gradient(95.58% 184.55% at -5.37% -16.9%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%), linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
             border-radius: 28px;
             border: none;
             padding: 10px 20px;
