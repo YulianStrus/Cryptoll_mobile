@@ -102,6 +102,36 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const strategySwiper = new Swiper(".strategy__slider", {
+    direction: "vertical",
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 15,
+    grabCursor: true,
+    loop: false,
+    on: {
+      slideChange: function () {
+        const activeSlide = strategySwiper.slides[strategySwiper.activeIndex];
+        document.getElementById("active-title").textContent =
+          activeSlide.textContent;
+        const totalSlides = document.querySelectorAll(".swiper-slide").length;
+        const maxIndex = totalSlides - 3;
+        const progress = (strategySwiper.activeIndex / maxIndex) * 100;
+        const clampedProgress = Math.min(Math.max(progress, 0), 100);
+        document.querySelector(
+          ".strategy__pagination-bar"
+        ).style.transform = `translateY(${clampedProgress}%)`;
+      },
+    },
+  });
+
+  const firstSlide = document.querySelector(".swiper-slide-active");
+  document.getElementById("active-title").textContent =
+    firstSlide.dataset.title;
+  document.getElementById("active-text").textContent = firstSlide.dataset.text;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const moduleHeaders = document.querySelectorAll(".module-header");
   const nestedHeaders = document.querySelectorAll(".nested-header");
 
@@ -109,7 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
     header.addEventListener("click", function () {
       this.classList.toggle("active");
       const content = this.nextElementSibling;
-      content.style.display = content.style.display === "block" ? "none" : "block";
+      content.style.display =
+        content.style.display === "block" ? "none" : "block";
     });
   });
 
@@ -153,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const accordionData = [
@@ -224,7 +254,6 @@ document.addEventListener("DOMContentLoaded", function () {
   accordionData.forEach((data, index) => {
     const accordionItem = document.createElement("div");
     accordionItem.classList.add("accordion-item");
-
 
     const accordionHeader = document.createElement("div");
     accordionHeader.classList.add("accordion-header");
@@ -319,17 +348,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const contentData = [
   {
-      image: "./img/company.webp",
-      subtitle: "About Us",
-      title: "Company standart",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
-    },
+    image: "./img/company.webp",
+    subtitle: "About Us",
+    title: "Company standart",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus",
+  },
   {
     image: "./img/goals.webp",
-      subtitle: "About Us",
-      title: "Company Goals",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus"
-  }
+    subtitle: "About Us",
+    title: "Company Goals",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus",
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -341,11 +372,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = section.querySelectorAll(".btn");
 
   buttons.forEach((button, index) => {
-      button.addEventListener("click", () => {
-          image.src = contentData[index].image;
-          subtitle.textContent = contentData[index].subtitle;
-          title.textContent = contentData[index].title;
-          description.textContent = contentData[index].description;
-      });
+    button.addEventListener("click", () => {
+      image.src = contentData[index].image;
+      subtitle.textContent = contentData[index].subtitle;
+      title.textContent = contentData[index].title;
+      description.textContent = contentData[index].description;
+    });
   });
 });
